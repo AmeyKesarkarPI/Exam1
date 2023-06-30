@@ -70,7 +70,7 @@ namespace Exam1
 
             var i = Items.Where(x => x.Content.Trim() == SelectedItem.Content.Trim());
 
-            if (i.Count() == 0)
+            if (i.Count() == 0 && SelectedItem.Content != "")
             {
                 Items.Add(new Item(this)
                 {
